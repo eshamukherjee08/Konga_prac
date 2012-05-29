@@ -34,51 +34,44 @@
           </div>
         </div>
         <div class = "header-search">
-          <ul>
-            <li class="category">
-              <form action="#">
-                <div class="category">
-                  <select name="cars" value="All Categories">
-                  <option value="All Categories">All Categories</option>
-                  <option value="A">A</option>
-                  <option value="B">B</option>
-                  <option value="C">C</option>
-                  <option value="D">D</option>
-                  </select>
-                </div>
-              </form>
-            </li>
-            <li class="search">
-              <div class="search-text">
-                Search:
-              </div>
-              <div class="search-drop">
+          <div class="category">
+            <form action="#">
+              <div class="category">
                 <select name="cars" value="All Categories">
-                <option value="A"></option>
+                <option value="All Categories">All Categories</option>
+                <option value="A">A</option>
                 <option value="B">B</option>
                 <option value="C">C</option>
                 <option value="D">D</option>
                 </select>
               </div>
-              <div class="search-box">
-                <input type="text" class="submit-text">
-                <input type="submit" class="submit" value="">
-              </div>
-            </li>
-            <li class="cart"></li>
-          </ul>
+            </form>
+          </div>
+          <div class="search">
+            <div class="search-text">
+              Search:
+            </div>
+            <div class="search-drop">
+              <select name="cars" value="All Categories">
+              <option value="A"></option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+              </select>
+            </div>
+            <div class="search-box">
+              <input type="text" class="submit-text">
+              <input type="submit" class="submit" value="">
+            </div>
+          </div>
+          <div class="cart"></div>
         </div>
       </div>
     </div>
     <div class="main-bg">
       <div class = "main-wrapper">
         <div class =" breadcrum">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Movies</a></li>
-            <li><a href="#">Action</a></li>
-            <li><a href="#" class= "active">The Expandables</a></li>
-          </ul>
+          <a href="#">Home</a> > <a href="#">Movies</a> > <a href="#">Action</a> > <span>The Expandables</span>
         </div>
         <div class="left-column">
           <div class = "main-view">
@@ -125,9 +118,9 @@
             <div class="main-right">
               <div class = "title">
                 <h3>The Expendables</h3>
-                <p>(Movie, Blu-ray)</p>
+                <span>(Movie, Blu-ray)</span>
               </div>
-              <div class="rating clear">
+              <div class="rating">
                 <div class = "star">
                   <img src="images/main_view/fill-star.png"/>
                 </div>
@@ -145,7 +138,7 @@
                 </div>
                 <p>4 Ratings</p>
               </div>
-              <div class="cast clear">
+              <div class="cast">
                 <div class = "actor">
                   Actor:
                   <a href="#">Sylvester Stallone</a>,
@@ -170,7 +163,7 @@
                   <p>A</p>
                 </div>
               </div>
-              <div class = "product clear">
+              <div class = "product">
                 <div class = "price">
                   <p>Price:</p>
                   <div class = "amount">2,000</div>
@@ -233,63 +226,43 @@
               </tr>
               <tr class="odd">
                 <td>Title:</td>
-                <td>
-                  <p>The Expendables</p>
-                </td>
+                <td>The Expendables</td>
               </tr>
               <tr>
                 <td>Category:</td>
-                <td>
-                  <p>Movies</p>
-                </td>
+                <td>Movies</td>
               </tr>
               <tr class="odd">
                 <td>Format:</td>
-                <td>
-                  <p>Blu-ray</p>
-                </td>
+                <td>Blu-ray</td>
               </tr>
               <tr>
                 <td>Language:</td>
-                <td>
-                  <p>English</p>
-                </td>
+                <td>English</td>
               </tr>
               <tr class="odd">
                 <td>Manufacturer:</td>
-                <td>
-                  <p>Eagle Home Entertaintment</p>
-                </td>
+                <td>Eagle Home Entertaintment</td>
               </tr>
               <tr>
                 <td>Running-Time:</td>
-                <td>
-                  <p>103 Minutes</p>
-                </td>
+                <td>103 Minutes</td>
               </tr>
               <tr class="odd">
                 <td>Video Encoding:</td>
-                <td>
-                  <p>All Regions</p>
-                </td>
+                <td>All Regions</td>
               </tr>
               <tr>
                 <td>Number of Discs:</td>
-                <td>
-                  <p>1</p>
-                </td>
+                <td>1</td>
               </tr>
               <tr class="odd">
                 <td>Subtitles:</td>
-                <td>
-                  <p>English</p>
-                </td>
+                <td>English</td>
               </tr>
               <tr>
                 <td>Rating:</td>
-                <td>
-                  <p>A</p>
-                </td>
+                <td>A</td>
               </tr>
               <tr class="odd">
                 <td>Genre:</td>
@@ -316,8 +289,8 @@
               </div>
               <input type="button" class="review-button" value ="WRITE A REVIEW">
             </div>
-            <div class ="r-data">
-              <div class="r-details">
+            <dl class ="r-data">
+              <dt class="r-details">
                 <div class ="r-name">Rick O'Conoll</div>
                 <p class="r-date"> 20 Mar 2011</p>
                 <div class ="r-rate">
@@ -337,14 +310,14 @@
                     <img src="images/main_view/empty-star.png"/>
                   </div>
                 </div>
-              </div>
-              <div class ="main-review">
+              </dt>
+              <dd class ="main-review">
                 <h3>Awesome Movie</h3>
                 <div class ='r-body'>
                   SYLVESTER STALLONE stars as Barney Ross, leader of The Expendables, a tight-knit team of skilled combat vets turned mercenaries. Hired by a powerful covert operator, the team jets off to a small South American country to overthrow a ruthless dictator. Once there, they find themselves caught in a deadly web of deceit and betrayal. Using every weapon at their disposal, they set out to save the innocent and punish the guilty in this blistering action-packed thriller. 
                 </div>
-              </div>
-            </div>
+              </dd>
+            </dl>
             <div class ="show-all">
               <a href="#">Show all reviews</a>
             </div>
@@ -352,50 +325,51 @@
         </div>
         <div class="right-column">
           <div class="free-return">
+            <img src="images/side_details/free-return.png" />
           </div>
           <div class = "new-releases">
             <div class = "title">
               <h4>Top New Releases</h4>
               <a href="#">More</a>
             </div>
-            <div class="movie">
-              <img src="images/side_details/twilight.png" />
-              <div class="m-details">
+            <dl class="movie">
+              <dt><img src="images/side_details/twilight.png" /></dt>
+              <dd class="m-details">
                 <a href="#">The Twilight Saga Breaking Dawn - 1</a>
                 <p>English Movie (Blu-ray)</p>
                 <div class="price">2,000</div>
-              </div>
-            </div>
-            <div class="movie">
-              <img src="images/side_details/soundtrack.png" />
-              <div class="m-details">
+              </dd>
+            </dl>
+            <dl class="movie">
+              <dt><img src="images/side_details/soundtrack.png" /></dt>
+              <dd class="m-details">
                 <a href="#">Soundtrack</a>
                 <p>Hindi Movie (Blu-ray)</p>
                 <div class="price">1,500</div>
-              </div>
-            </div>
+              </dd>
+            </dl>
           </div>
           <div class = "top-selling">
             <div class = "title">
               <h4>Top Selling Movies</h4>
               <a href="#">More</a>
             </div>
-            <div class="movie">
-              <img src="images/side_details/twilight.png" />
-              <div class="m-details">
+            <dl class="movie">
+              <dt><img src="images/side_details/twilight.png" /></dt>
+              <dd class="m-details">
                 <a href="#">The Twilight Saga Breaking Dawn - 1</a>
                 <p>English Movie (Blu-ray)</p>
                 <div class="price">2,000</div>
-              </div>
-            </div>
-            <div class="movie">
-              <img src="images/side_details/soundtrack.png" />
-              <div class="m-details">
+              </dd>
+            </dl>
+            <dl class="movie">
+              <dt><img src="images/side_details/soundtrack.png" /></dt>
+              <dd class="m-details">
                 <a href="#">Soundtrack</a>
                 <p>Hindi Movie (Blu-ray)</p>
                 <div class="price">1,500</div>
-              </div>
-            </div>
+              </dd>
+            </dl>
           </div>
         </div>
       </div>
@@ -428,6 +402,9 @@
               <li><a href="#">Home</a></li>
               <li><a href="#">Wallet</a></li>
             </ul>
+          </div>
+          <div class ="brands">
+            <div class ="title">NIGERIA'S ONLINE MEGASTORE FOR ALL LEADING BRANDS</DIV>
           </div>
           <div class="touch">
             <span>Keep in touch</span>
