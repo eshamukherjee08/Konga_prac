@@ -260,6 +260,5 @@
 
 /* hacks for FF*/
 @-moz-document url-prefix() {
-	.header-search li.search .search-box input.submit-text {height:29px;}
-	.header-search li.search .search-box input.submit {padding-top: 0px;}
+	.header-search div.search-box input[type="text"] {height:36px;}
 }
