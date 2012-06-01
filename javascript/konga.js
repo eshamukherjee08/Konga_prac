@@ -12,8 +12,11 @@ $(document).ready(function(){
   });
   
   $(".dropdown ul.main li#movie a:eq(0), .dropdown ul.main li#gaming a:eq(0), .dropdown ul.main li#books a:eq(0), .dropdown ul.main li#mt a:eq(0)").click(function() {
-      $(this).parent().find('div.list-show').toggle();
-      $(this).parent().addClass('active');
+      var $current = $(this).parent();
+      $current.find('div.list-show').toggle();
+      $current.addClass('active');
+      var $len = $current.find('.list-show').find('.show-left').width()+$current.find('.list-show').find('.show-right').width();
+      $current.find('.list-show').css('width', $len);
   });
   
   $(document).bind('click', function(e) {
